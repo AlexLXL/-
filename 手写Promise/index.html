@@ -9,9 +9,9 @@
 <script type="text/javascript">
   // 构造函数和.then通过实例对象产生联系，所以把状态、数据、callbacks什么的都放在实例对象上
 
-  const promise = new Promise((resolve, reject) => {
+  const promise = new Promise((resolve, reject) =>
     resolve(707);
-    // reject(707); // 虽然下面的往resolve和reject都塞了东西，但实际只会调用resolve或者reject
+    // reject(707);  // 虽然下面的往resolve和reject都塞了东西，但实际只会调用resolve或者reject
     // throw 707;
     // setTimeout(() => { // 用那个callbacks数组存起来，一有状态就调用
     //   reject(707)
